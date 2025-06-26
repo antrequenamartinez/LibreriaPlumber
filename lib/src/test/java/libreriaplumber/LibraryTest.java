@@ -4,6 +4,9 @@
 package libreriaplumber;
 
 import org.junit.jupiter.api.Test;
+
+import es.externa.libreriaplumber.Library;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class LibraryTest {
