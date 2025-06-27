@@ -6,7 +6,7 @@ public class Obra {
     private String descripcion;
     private String direccion;
     private boolean abierta;
-    private double horasTrabajo;
+    private Double horasTrabajo;
 
     public Obra() {
         this.abierta = true;
@@ -51,11 +51,11 @@ public class Obra {
         this.abierta = abierta;
     }
 
-    public double getHorasTrabajo() {
+    public Double getHorasTrabajo() {
         return horasTrabajo;
     }
 
-    public void setHorasTrabajo(double horasTrabajo) {
+    public void setHorasTrabajo(Double horasTrabajo) {
         this.horasTrabajo = horasTrabajo;
     }
    
