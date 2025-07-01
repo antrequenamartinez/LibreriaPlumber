@@ -1,36 +1,59 @@
-Libreria Plumber
-Descripción
+# Librería Plumber
 
-Libreria Plumber es una librería Java diseñada para la gestión y creacion de facturas para empresas de fontaneria.
+## Descripción
 
-Características Principales
+**Librería Plumber** es una librería Java pensada para facilitar la **gestión de obras y facturación** en empresas de fontanería. Define un conjunto de clases reutilizables para representar clientes, obras, reparaciones, instalaciones y materiales.
 
- Creacion de obras te tipo reparacion e instalacion.
- Creacion y generacion de facturas para obras de fontaneria.
- 
-Estructura del Proyecto
+---
 
-DiagramaClases
-Instalación
-Usando JitPack
+## Características Principales
 
-Para usar esta librería en tu proyecto, añadir el repositorio de JitPack al archivo build.gradle:
+- Creación y gestión de **obras** de tipo _reparación_ e _instalación_.
+- Asociación de obras con clientes y materiales.
+- Cálculo de **costes** de servicio, materiales y mano de obra.
+- Preparación de datos para **generación de facturas**.
 
+---
+
+## Estructura del Proyecto
+
+![Diagrama de diseño MVP](https://git.institutomilitar.com/ddcDIM47/plumber.inc/-/wikis/Diagramas/DiagramaClases.png)
+
+## Instalación
+
+### Usando JitPack
+
+1. Añade el repositorio de JitPack en tu `build.gradle`:
+
+```groovy
 repositories {
     maven { url 'https://jitpack.io' }
 }
+```
 
-Luego, añadir la dependencia:
+2. Añade la dependencia:
 
+```groovy
 dependencies {
     implementation 'com.github.[USUARIO]:libreria-plumber:[VERSION]'
 }
+```
+## Acciones Disponibles
 
-Tipos de acciones Disponibles
+- Crear obras (Reparación / Instalación)
+- Asociar materiales y clientes
+- Calcular:
+  - Total de materiales
+  - Coste por horas de trabajo
+  - Precio de servicio
+  - Base imponible e IVA
+- Obtener información para generar facturas
 
-    
+---
 
-Requisitos
+## Requisitos
 
-    Java 8 o superior
-    Gradle 7.0 o superior
+- Java 8 o superior
+- Gradle 7.0 o superior
+
+---
