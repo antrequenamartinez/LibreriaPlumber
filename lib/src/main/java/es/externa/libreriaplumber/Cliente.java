@@ -7,7 +7,8 @@ public class Cliente {
     private String apellido;
     private String telefono;
 
-    public Cliente() {}
+    public Cliente() {
+    }
 
     public Cliente(String dni, String nombre, String apellido, String telefono) {
         this.dni = dni;

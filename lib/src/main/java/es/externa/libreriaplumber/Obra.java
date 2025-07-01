@@ -11,9 +11,10 @@ public abstract class Obra {
     private boolean abierta = true;
     private double horasTrabajo;
 
-    private List<Material> materialesConsumidos = new ArrayList<>(); 
+    private List<Material> materialesConsumidos = new ArrayList<>();
 
-    public Obra() {}
+    public Obra() {
+    }
 
     public Obra(String nombre, String descripcion, String direccion) {
         this.nombre = nombre;
@@ -59,7 +60,7 @@ public abstract class Obra {
 
     public void setHorasTrabajo(double horasTrabajo) {
         this.horasTrabajo = horasTrabajo;
-    }    
+    }
 
     public List<Material> getMaterialesConsumidos() {
         return materialesConsumidos;
@@ -78,9 +79,9 @@ public abstract class Obra {
         material.setObra(this);
         materialesConsumidos.add(material);
     }
-    
+
     public boolean removeMaterial(Material material) {
         return materialesConsumidos.remove(material);
     }
-    
+
 }

@@ -8,7 +8,7 @@ public class Material {
     private int unidades;
 
     public Material() {
-        
+
     }
 
     public Material(String nombre, String descripcion, Double precioUnidad, int unidades) {
@@ -49,13 +49,13 @@ public class Material {
     public void setUnidades(int unidades) {
         this.unidades = unidades;
     }
- 
+
     public Obra getObra() {
-        return null;
+        throw new UnsupportedOperationException("Implementar en subclase"); // para comprobar
     }
 
     public void setObra(Obra obra) {
-   
+        throw new UnsupportedOperationException("Implementar en subclase"); // para comprobar
     }
-    
+
 }
