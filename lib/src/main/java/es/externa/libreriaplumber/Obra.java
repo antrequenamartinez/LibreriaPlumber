@@ -18,7 +18,7 @@ public class Obra {
         this.direccion = direccion;
         this.abierta = true;
     }
-  
+
     public String getNombre() {
         return nombre;
     }
@@ -58,5 +58,5 @@ public class Obra {
     public void setHorasTrabajo(Double horasTrabajo) {
         this.horasTrabajo = horasTrabajo;
     }
-   
+
 }
