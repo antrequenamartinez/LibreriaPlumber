@@ -6,16 +6,9 @@ public class Material {
     private String descripcion;
     private Double precioUnidad;
     private int unidades;
+    private Obra obra;
 
-    public Material() {
-    }
-
-    public Material(String nombre, String descripcion, Double precioUnidad, int unidades) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precioUnidad = precioUnidad;
-        this.unidades = unidades;
-    }
+    public Material() {}
 
     public String getNombre() {
         return nombre;
@@ -47,5 +40,13 @@ public class Material {
 
     public void setUnidades(int unidades) {
         this.unidades = unidades;
+    }
+
+    public Obra getObra() {
+        return obra;
+    }
+
+    public void setObra(Obra obra) {
+        this.obra = obra;
     }
 }
