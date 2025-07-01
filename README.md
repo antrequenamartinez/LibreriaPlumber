@@ -16,7 +16,7 @@
 
 ## Estructura del Proyecto
 
-![Diagrama de Clases](./diagrama/DiagramaClases.png)
+![Diagrama de Clases](lib/diagrama/DiagramaClases.png)
 
 ## Instalación
 
