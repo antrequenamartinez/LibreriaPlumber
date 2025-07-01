@@ -10,14 +10,13 @@
 
 - Creación y gestión de **obras** de tipo _reparación_ e _instalación_.
 - Asociación de obras con clientes y materiales.
-- Cálculo de **costes** de servicio, materiales y mano de obra.
 - Preparación de datos para **generación de facturas**.
 
 ---
 
 ## Estructura del Proyecto
 
-![Diagrama de diseño MVP](https://git.institutomilitar.com/ddcDIM47/plumber.inc/-/wikis/Diagramas/DiagramaClases.png)
+![Diagrama de Clases](./diagrama/DiagramaClases.png)
 
 ## Instalación
 
@@ -42,11 +41,6 @@ dependencies {
 
 - Crear obras (Reparación / Instalación)
 - Asociar materiales y clientes
-- Calcular:
-  - Total de materiales
-  - Coste por horas de trabajo
-  - Precio de servicio
-  - Base imponible e IVA
 - Obtener información para generar facturas
 
 ---
