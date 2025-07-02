@@ -2,7 +2,7 @@ package es.externa.libreriaplumber;
 
 import java.time.LocalDate;
 
-public class Reparacion extends Obra {
+public abstract class Reparacion<M extends Material<?>> extends Obra<M> {
 
     private int prioridad;
     private double precioServicio;
@@ -10,6 +10,7 @@ public class Reparacion extends Obra {
     private LocalDate fecha;
 
     public Reparacion() {
+        super();
     }
 
     public Reparacion(String nombre, String descripcion, String direccion) {

@@ -1,6 +1,8 @@
 package es.externa.libreriaplumber;
 
-public class Material {
+import es.externa.libreriaplumber.Material;
+
+public abstract class Material<O extends Obra<?>> {
 
     private String nombre;
     private String descripcion;
@@ -8,7 +10,6 @@ public class Material {
     private int unidades;
 
     public Material() {
-
     }
 
     public Material(String nombre, String descripcion, Double precioUnidad, int unidades) {
@@ -50,12 +51,7 @@ public class Material {
         this.unidades = unidades;
     }
 
-    public Obra getObra() {
-        throw new UnsupportedOperationException("Implementar en subclase"); // para comprobar
-    }
+    public abstract O getObra();
 
-    public void setObra(Obra obra) {
-        throw new UnsupportedOperationException("Implementar en subclase"); // para comprobar
-    }
-
+    public abstract void setObra(Obra<? extends Material<?>> obra);
 }

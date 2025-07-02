@@ -3,7 +3,7 @@ package es.externa.libreriaplumber;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Obra {
+public abstract class Obra<M extends Material<?>> {
 
     private String nombre;
     private String descripcion;
@@ -11,7 +11,7 @@ public abstract class Obra {
     private boolean abierta = true;
     private double horasTrabajo;
 
-    private List<Material> materialesConsumidos = new ArrayList<>();
+    private List<M> materialesConsumidos = new ArrayList<>();
 
     public Obra() {
     }
@@ -62,26 +62,23 @@ public abstract class Obra {
         this.horasTrabajo = horasTrabajo;
     }
 
-    public List<Material> getMaterialesConsumidos() {
+    public List<M> getMaterialesConsumidos() {
         return materialesConsumidos;
     }
 
-    public void setMaterialesConsumidos(List<Material> materialesConsumidos) {
+    public void setMaterialesConsumidos(List<M> materialesConsumidos) {
         this.materialesConsumidos = materialesConsumidos;
     }
 
     public void addMaterialConsumido(String nombre, String descripcion, Double precioUnidad, int unidades) {
-        Material material = new Material();
-        material.setNombre(nombre);
-        material.setDescripcion(descripcion);
-        material.setPrecioUnidad(precioUnidad);
-        material.setUnidades(unidades);
+        M material = crearMaterial(nombre, descripcion, precioUnidad, unidades);
         material.setObra(this);
         materialesConsumidos.add(material);
     }
 
-    public boolean removeMaterial(Material material) {
+    public boolean removeMaterial(M material) {
         return materialesConsumidos.remove(material);
     }
 
+    protected abstract M crearMaterial(String nombre, String descripcion, Double precioUnidad, int unidades);
 }

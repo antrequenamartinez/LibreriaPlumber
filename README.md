@@ -16,7 +16,7 @@
 
 ## Estructura del Proyecto
 
-![Diagrama de Clases](lib/diagrama/DiagramaClases.png)
+![Diagrama de diseño MVP](https://git.institutomilitar.com/ddcDIM47/plumber.inc/-/wikis/Diagramas/DiagramaClases.png)
 
 ## Instalación
 
@@ -24,7 +24,7 @@
 
 1. Añade el repositorio de JitPack en tu `build.gradle`:
 
-```groovy
+```
 repositories {
     maven { url 'https://jitpack.io' }
 }

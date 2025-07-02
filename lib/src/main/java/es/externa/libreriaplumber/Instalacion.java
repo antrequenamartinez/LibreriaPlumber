@@ -2,13 +2,14 @@ package es.externa.libreriaplumber;
 
 import java.time.LocalDate;
 
-public class Instalacion extends Obra {
+public abstract class Instalacion<M extends Material<?>> extends Obra<M> {
 
     private Double estimacionTemporal;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
 
     public Instalacion() {
+        super();
     }
 
     public Instalacion(String nombre, String descripcion, String direccion) {
