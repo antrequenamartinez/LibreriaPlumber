@@ -16,7 +16,7 @@
 
 ## Estructura del Proyecto
 
-![Diagrama de diseño MVP](https://git.institutomilitar.com/ddcDIM47/plumber.inc/-/wikis/Diagramas/DiagramaClases.png)
+![Diagrama de diseño](lib/diagrama/DiagramaClases.png)
 
 ## Instalación
 
